@@ -1,0 +1,133 @@
+\hypertarget{class_database}{}\doxysection{Database Class Reference}
+\label{class_database}\index{Database@{Database}}
+
+
+{\ttfamily \#include $<$Database.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database}} ()
+\item 
+\mbox{\hyperlink{class_database_a84d399a2ad58d69daab9b05330e1316d}{$\sim$\+Database}} ()
+\item 
+\mbox{\hyperlink{class_user}{User}} $\ast$ \mbox{\hyperlink{class_database_afa393e71918e970a33d29de446bd9359}{Login}} (std\+::string user, std\+::string password)
+\item 
+void \mbox{\hyperlink{class_database_a19e01ee1ddc0b900ae9e22b70e89961d}{Save}} (\mbox{\hyperlink{class_laboratory}{Laboratory}} laboratory)
+\item 
+void \mbox{\hyperlink{class_database_a4722b630790b84f4939d1fc89fb788d6}{Save}} (\mbox{\hyperlink{class_doctor}{Doctor}} doctor)
+\item 
+void \mbox{\hyperlink{class_database_a47b341f1a8cd5b653d66f0f27f59b608}{Save}} (\mbox{\hyperlink{class_client}{Client}} client)
+\item 
+void \mbox{\hyperlink{class_database_a1ad55cdd1736556901eba68f951bbe13}{Save}} (\mbox{\hyperlink{class_study}{Study}} study)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_laboratory}{Laboratory}} $>$ \mbox{\hyperlink{class_database_a29184eca2ec79affb20ffe7c8123d7c1}{Get\+Labs}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_client}{Client}} $>$ \mbox{\hyperlink{class_database_ac4995e8040418633ff0ac09d8a21ce3b}{Get\+Clients}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_study}{Study}} $>$ \mbox{\hyperlink{class_database_a89c278693e9f6ed4c09ce393383a31ad}{Get\+Studies}} ()
+\item 
+\mbox{\hyperlink{class_laboratory}{Laboratory}} $\ast$ \mbox{\hyperlink{class_database_a5beb0ce4d9cbe508ee2c3d9d2535d183}{Get\+Lab}} (std\+::string id)
+\item 
+\mbox{\hyperlink{class_client}{Client}} \mbox{\hyperlink{class_database_a9bdd32d626d32831d9907627624ac7bc}{Get\+Client}} (std\+::string id)
+\item 
+void \mbox{\hyperlink{class_database_a626ed7457e8eacbec00a22f09eba95ed}{Delete\+Record}} (int index, std\+::string path)
+\item 
+\mbox{\hyperlink{class_doctor}{Doctor}} \mbox{\hyperlink{class_database_ace87c65fc46230f9630484db0217b8be}{Get\+Or\+Save\+Doctor}} (std\+::string name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_database_a4703c80e6969d33565ea340f768fdadf}\label{class_database_a4703c80e6969d33565ea340f768fdadf}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Database()}{Database()}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a84d399a2ad58d69daab9b05330e1316d}\label{class_database_a84d399a2ad58d69daab9b05330e1316d}} 
+\index{Database@{Database}!````~Database@{$\sim$Database}}
+\index{````~Database@{$\sim$Database}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{$\sim$Database()}{~Database()}}
+{\footnotesize\ttfamily Database\+::$\sim$\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_a626ed7457e8eacbec00a22f09eba95ed}\label{class_database_a626ed7457e8eacbec00a22f09eba95ed}} 
+\index{Database@{Database}!DeleteRecord@{DeleteRecord}}
+\index{DeleteRecord@{DeleteRecord}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{DeleteRecord()}{DeleteRecord()}}
+{\footnotesize\ttfamily void Database\+::\+Delete\+Record (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a9bdd32d626d32831d9907627624ac7bc}\label{class_database_a9bdd32d626d32831d9907627624ac7bc}} 
+\index{Database@{Database}!GetClient@{GetClient}}
+\index{GetClient@{GetClient}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{GetClient()}{GetClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client}{Client}} Database\+::\+Get\+Client (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_ac4995e8040418633ff0ac09d8a21ce3b}\label{class_database_ac4995e8040418633ff0ac09d8a21ce3b}} 
+\index{Database@{Database}!GetClients@{GetClients}}
+\index{GetClients@{GetClients}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{GetClients()}{GetClients()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_client}{Client}} $>$ Database\+::\+Get\+Clients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a5beb0ce4d9cbe508ee2c3d9d2535d183}\label{class_database_a5beb0ce4d9cbe508ee2c3d9d2535d183}} 
+\index{Database@{Database}!GetLab@{GetLab}}
+\index{GetLab@{GetLab}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{GetLab()}{GetLab()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_laboratory}{Laboratory}} $\ast$ Database\+::\+Get\+Lab (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a29184eca2ec79affb20ffe7c8123d7c1}\label{class_database_a29184eca2ec79affb20ffe7c8123d7c1}} 
+\index{Database@{Database}!GetLabs@{GetLabs}}
+\index{GetLabs@{GetLabs}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{GetLabs()}{GetLabs()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_laboratory}{Laboratory}} $>$ Database\+::\+Get\+Labs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_ace87c65fc46230f9630484db0217b8be}\label{class_database_ace87c65fc46230f9630484db0217b8be}} 
+\index{Database@{Database}!GetOrSaveDoctor@{GetOrSaveDoctor}}
+\index{GetOrSaveDoctor@{GetOrSaveDoctor}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{GetOrSaveDoctor()}{GetOrSaveDoctor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_doctor}{Doctor}} Database\+::\+Get\+Or\+Save\+Doctor (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a89c278693e9f6ed4c09ce393383a31ad}\label{class_database_a89c278693e9f6ed4c09ce393383a31ad}} 
+\index{Database@{Database}!GetStudies@{GetStudies}}
+\index{GetStudies@{GetStudies}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{GetStudies()}{GetStudies()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_study}{Study}} $>$ Database\+::\+Get\+Studies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_afa393e71918e970a33d29de446bd9359}\label{class_database_afa393e71918e970a33d29de446bd9359}} 
+\index{Database@{Database}!Login@{Login}}
+\index{Login@{Login}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user}{User}} $\ast$ Database\+::\+Login (\begin{DoxyParamCaption}\item[{std\+::string}]{user,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a47b341f1a8cd5b653d66f0f27f59b608}\label{class_database_a47b341f1a8cd5b653d66f0f27f59b608}} 
+\index{Database@{Database}!Save@{Save}}
+\index{Save@{Save}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Database\+::\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}}}]{client }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a4722b630790b84f4939d1fc89fb788d6}\label{class_database_a4722b630790b84f4939d1fc89fb788d6}} 
+\index{Database@{Database}!Save@{Save}}
+\index{Save@{Save}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Database\+::\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_doctor}{Doctor}}}]{doctor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a19e01ee1ddc0b900ae9e22b70e89961d}\label{class_database_a19e01ee1ddc0b900ae9e22b70e89961d}} 
+\index{Database@{Database}!Save@{Save}}
+\index{Save@{Save}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Database\+::\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_laboratory}{Laboratory}}}]{laboratory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_a1ad55cdd1736556901eba68f951bbe13}\label{class_database_a1ad55cdd1736556901eba68f951bbe13}} 
+\index{Database@{Database}!Save@{Save}}
+\index{Save@{Save}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Database\+::\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_study}{Study}}}]{study }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_database_8h}{Database.\+h}}\item 
+\mbox{\hyperlink{_database_8cpp}{Database.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+\hypertarget{_reader_8h_source}{}\doxysection{Reader.\+h}
+\mbox{\hyperlink{_reader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_reader}{Reader}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_reader_a10b351aa992e40649150c24c9df3bdc3}{Reader}}(std::string line);}
+\DoxyCodeLine{10     std::string \mbox{\hyperlink{class_reader_a0472ac8b2af6f00c282d042ff9dd2d1a}{GetString}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{11     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_reader_a8152ef04862362bb1097ad482c35a941}{GetChar}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{12     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_reader_aa57087468dcb6054be844bad04aa72a0}{GetFloat}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_reader_a43569adc68429f030b9a84b5e5aed02c}{GetInt}}(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_reader_a78089542fd27a0ac2df6702fffe8725c}{\string~Reader}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     std::vector<std::string>* Values;}
+\DoxyCodeLine{18     std::vector<int> GetSeparatorIndexes(std::string s, \textcolor{keywordtype}{char} c);}
+\DoxyCodeLine{19 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,44 @@
+\hypertarget{_menu_8h_source}{}\doxysection{Menu.\+h}
+\mbox{\hyperlink{_menu_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_database_8h}{Database.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_admin_8h}{Admin.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_client_8h}{Client.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_laboratory_8h}{Laboratory.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_study_8h}{Study.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_menu}{Menu}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}}();}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{\string~Menu}}();}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_menu_a83fd69776bdeea0737c89c3cf83102df}{Cover}}();}
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_menu_a005e1a3e31d5d4a3f4f7ab931e88b860}{Login}}();}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} Logo();}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} Pause();}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} Show(\mbox{\hyperlink{class_admin}{Admin}}* admin);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} Show(\mbox{\hyperlink{class_client}{Client}}* client);}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} Clear();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} Error(std::string error);}
+\DoxyCodeLine{23     \textcolor{comment}{//L A B O R A T O R I O S}}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_laboratory}{Laboratory}} NewLaboratory();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} EditLaboratory();}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} HideLaboratory();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} ShowLabs();}
+\DoxyCodeLine{28     \textcolor{comment}{//P A C I E N T E S}}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_client}{Client}} NewClient();}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} HideClient();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} EditClient();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} ShowClients();}
+\DoxyCodeLine{33     \textcolor{comment}{//E S T U D I O S}}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} NewStudy();}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} GlobalStudiesReport();}
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 }
+
+\end{DoxyCode}

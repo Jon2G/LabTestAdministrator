@@ -1,0 +1,2 @@
+|CLGN|Clinical laboratory Jenner|1|
+|LBCP3|Laboratorios Castillejos|1|

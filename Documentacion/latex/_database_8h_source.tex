@@ -1,0 +1,42 @@
+\hypertarget{_database_8h_source}{}\doxysection{Database.\+h}
+\mbox{\hyperlink{_database_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <filesystem>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_user_8h}{User.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_menu_8h}{Menu.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_client_8h}{Client.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_admin_8h}{Admin.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_reader_8h}{Reader.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_laboratory_8h}{Laboratory.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_study_8h}{Study.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_database}{Database}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database}}();}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_database_a84d399a2ad58d69daab9b05330e1316d}{\string~Database}}();}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_user}{User}}* \mbox{\hyperlink{class_database_afa393e71918e970a33d29de446bd9359}{Login}}(std::string user, std::string password);}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_database_a19e01ee1ddc0b900ae9e22b70e89961d}{Save}}(\mbox{\hyperlink{class_laboratory}{Laboratory}} laboratory);}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_database_a19e01ee1ddc0b900ae9e22b70e89961d}{Save}}(\mbox{\hyperlink{class_doctor}{Doctor}} doctor);}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_database_a19e01ee1ddc0b900ae9e22b70e89961d}{Save}}(\mbox{\hyperlink{class_client}{Client}} client);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_database_a19e01ee1ddc0b900ae9e22b70e89961d}{Save}}(\mbox{\hyperlink{class_study}{Study}} study);}
+\DoxyCodeLine{21     std::vector<Laboratory> \mbox{\hyperlink{class_database_a29184eca2ec79affb20ffe7c8123d7c1}{GetLabs}}();}
+\DoxyCodeLine{22     std::vector<Client> \mbox{\hyperlink{class_database_ac4995e8040418633ff0ac09d8a21ce3b}{GetClients}}();}
+\DoxyCodeLine{23     std::vector<Study> \mbox{\hyperlink{class_database_a89c278693e9f6ed4c09ce393383a31ad}{GetStudies}}();}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_laboratory}{Laboratory}}* \mbox{\hyperlink{class_database_a5beb0ce4d9cbe508ee2c3d9d2535d183}{GetLab}}(std::string \textcolor{keywordtype}{id});}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_client}{Client}} \mbox{\hyperlink{class_database_a9bdd32d626d32831d9907627624ac7bc}{GetClient}}(std::string \textcolor{keywordtype}{id});}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_database_a626ed7457e8eacbec00a22f09eba95ed}{DeleteRecord}}(\textcolor{keywordtype}{int} index, std::string path);}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_doctor}{Doctor}} \mbox{\hyperlink{class_database_ace87c65fc46230f9630484db0217b8be}{GetOrSaveDoctor}}(std::string name);}
+\DoxyCodeLine{28 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     std::fstream FOpen(std::string path);}
+\DoxyCodeLine{30     std::ifstream FRead(std::string path);}
+\DoxyCodeLine{31     \textcolor{keyword}{const} std::string Users = \textcolor{stringliteral}{"{}Db\(\backslash\)\(\backslash\)users.txt"{}};}
+\DoxyCodeLine{32     \textcolor{keyword}{const} std::string Laboratories = \textcolor{stringliteral}{"{}Db\(\backslash\)\(\backslash\)labs.txt"{}};}
+\DoxyCodeLine{33     \textcolor{keyword}{const} std::string Doctors = \textcolor{stringliteral}{"{}Db\(\backslash\)\(\backslash\)doctors.txt"{}};}
+\DoxyCodeLine{34     \textcolor{keyword}{const} std::string Clients = \textcolor{stringliteral}{"{}Db\(\backslash\)\(\backslash\)clients.txt"{}};}
+\DoxyCodeLine{35     \textcolor{keyword}{const} std::string Studies =\textcolor{stringliteral}{"{}Db\(\backslash\)\(\backslash\)studies.txt"{}};}
+\DoxyCodeLine{36     \textcolor{keyword}{const} std::string Temporal =\textcolor{stringliteral}{"{}Db\(\backslash\)\(\backslash\)temp.txt"{}};}
+\DoxyCodeLine{37 \};}
+
+\end{DoxyCode}
